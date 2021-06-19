@@ -47,6 +47,8 @@ int main()
     {
       needingTime[count] -= timeQuantum;
       time+=timeQuantum;
+      int processNumber = count + 1;
+      printf("P%d\n", processNumber);
     }
     if(needingTime[count] == 0 && flag == 1)
     {
@@ -74,6 +76,8 @@ int main()
 
   // printing Average TurnaroundTime
   printf("Average Turnaround Time = %f\n",turnaroundTime*1.0/numberOfProcesses);
+
+  // processes order
   
   return 0;
 }
